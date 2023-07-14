@@ -1,8 +1,11 @@
 {
   "name": "bingwp",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Used to download/save the bing image of the day wallpaper for desktop use.",
   "main": "index.js",
+  "bin": {
+	"bingwp": "./index.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "r": "deno run -A ./index.ts"

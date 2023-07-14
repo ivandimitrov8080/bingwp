@@ -1,3 +1,4 @@
+#!/usr/bin/env deno
 import xdg from '@folder/xdg'
 import download from 'image-downloader'
 import fs from 'node:fs'
