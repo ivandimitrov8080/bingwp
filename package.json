@@ -1,0 +1,30 @@
+{
+  "name": "bingwp",
+  "version": "1.0.0",
+  "description": "Used to download/save the bing image of the day wallpaper for desktop use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "r": "deno run -A ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivandimitrov8080/bingwp.git"
+  },
+  "keywords": [
+    "bing",
+    "wallpaper"
+  ],
+  "author": "Ivan Dimitrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivandimitrov8080/bingwp/issues"
+  },
+  "homepage": "https://github.com/ivandimitrov8080/bingwp#readme",
+  "dependencies": {
+    "@folder/xdg": "^3.1.2",
+    "@types/node": "^20.4.2",
+    "dayjs": "^1.11.9",
+    "image-downloader": "^4.3.0"
+  }
+}
