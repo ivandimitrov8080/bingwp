@@ -1,6 +1,6 @@
 {
   "name": "bingwp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Used to download/save the bing image of the day wallpaper for desktop use.",
   "main": "index.js",
   "bin": {
