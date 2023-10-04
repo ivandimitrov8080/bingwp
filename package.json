@@ -2,7 +2,9 @@
   "name": "bingwp",
   "version": "1.0.9",
   "license": "MIT",
-  "bin": "dist/cli.js",
+  "bin": {
+    "bingwp": "dist/cli.js"
+  },
   "type": "module",
   "engines": {
     "node": ">=16"
