@@ -1,35 +1,56 @@
 {
   "name": "bingwp",
-  "version": "1.0.7",
-  "description": "Used to download/save the bing image of the day wallpaper for desktop use.",
-  "main": "index.js",
-  "bin": {
-    "bingwp": "./index.ts"
+  "version": "1.0.8",
+  "license": "MIT",
+  "bin": "dist/cli.tsx",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "r": "deno run -A ./index.ts"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "prettier --check . && xo && ava"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivandimitrov8080/bingwp.git"
-  },
-  "keywords": [
-    "bing",
-    "wallpaper"
+  "files": [
+    "dist"
   ],
-  "author": "Ivan Dimitrov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ivandimitrov8080/bingwp/issues"
-  },
-  "homepage": "https://github.com/ivandimitrov8080/bingwp#readme",
   "dependencies": {
-    "@folder/xdg": "^3.1.2",
-    "@types/node": "^20.4.2",
-    "dayjs": "^1.11.9",
-    "image-downloader": "^4.3.0",
-    "ink": "^4.4.1",
-    "react": "^18.2.0"
-  }
+    "ink": "^4.1.0",
+    "meow": "^11.0.0",
+    "react": "^18.2.0",
+    "terminal-image": "^2.0.0"
+  },
+  "devDependencies": {
+    "@sindresorhus/tsconfig": "^3.0.1",
+    "@types/react": "^18.0.32",
+    "@vdemedes/prettier-config": "^2.0.1",
+    "ava": "^5.2.0",
+    "chalk": "^5.2.0",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "ink-testing-library": "^3.0.0",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3",
+    "xo": "^0.53.1"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module",
+      "tsx": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
+  },
+  "xo": {
+    "extends": "xo-react",
+    "prettier": true,
+    "rules": {
+      "react/prop-types": "off"
+    }
+  },
+  "prettier": "@vdemedes/prettier-config"
 }
