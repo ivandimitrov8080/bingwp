@@ -4,7 +4,7 @@
   "description": "Used to download/save the bing image of the day wallpaper for desktop use.",
   "main": "index.js",
   "bin": {
-	"bingwp": "./index.ts"
+    "bingwp": "./index.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,6 +28,8 @@
     "@folder/xdg": "^3.1.2",
     "@types/node": "^20.4.2",
     "dayjs": "^1.11.9",
-    "image-downloader": "^4.3.0"
+    "image-downloader": "^4.3.0",
+    "ink": "^4.4.1",
+    "react": "^18.2.0"
   }
 }
