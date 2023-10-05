@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import dayjs from 'dayjs';
 
 export const userDirs = xdg.userdirs.expand().dirs();
-export const picturesDir = userDirs.XDG_PICTURES_DIR_DIR;
+export const picturesDir = userDirs.XDG_PICTURES_DIR;
 export const oldPicturesDir = `${picturesDir}/bg.old/`;
 export const picPath = `${picturesDir}/bg.png`;
 

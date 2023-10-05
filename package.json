@@ -1,6 +1,6 @@
 {
   "name": "bingwp",
-  "version": "1.0.9",
+  "version": "1.0.A",
   "license": "MIT",
   "bin": {
     "bingwp": "dist/cli.js"
